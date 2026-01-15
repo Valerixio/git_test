@@ -1,0 +1,40 @@
+div {
+  color: purple;
+}
+
+.alert-text {
+  color: rgb(255, 0, 187);
+}
+
+#title {
+  background-color: rgba(42, 47, 49, 0.214);
+}
+
+#preview {
+  background-color: rgba(82, 183, 220, 0.214);
+}
+
+.read {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+.unread {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+
+
+.ancestor .contents {
+  color:rgb(238, 152, 47)/* some declarations */
+}
