@@ -1,12 +1,12 @@
 div {
-  color: purple;
+  color: rgb(34, 32, 32);
 }
 
 .alert-text {
   color: rgb(255, 0, 187);
 }
 
-#title {
+.title {
   background-color: rgba(42, 47, 49, 0.214);
 }
 
@@ -37,4 +37,46 @@ div {
 
 .ancestor .contents {
   color:rgb(238, 152, 47)/* some declarations */
+}
+
+#box
+{
+  background: rgb(209, 226, 236);
+  width: min(420px, 92vw);
+  padding: 2px;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.305);
+  text-align: center;
+}
+
+
+
+centertop {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+center {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textcenter {
+
+  text-align: center;
+
+}
+
+textpaddingleft {
+
+  padding-left: px 100;
+}
+
+newbody {
+  margin : px 20
 }

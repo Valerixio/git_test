@@ -81,6 +81,7 @@ function nextPhase() {
     const isLong = pomosDone % 4 === 0;
     secondsLeft = isLong ? LONG_BREAK : SHORT_BREAK;
   } else {
+      beep(990); // 🔊 suono qui
     mode = "work";
     secondsLeft = WORK;
   }
@@ -117,5 +118,8 @@ skipBtn.addEventListener("click", () => {
   beep();
   nextPhase();
 });
+
+
+
 
 render();
