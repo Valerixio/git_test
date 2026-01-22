@@ -1,0 +1,110 @@
+body 
+{
+margin: 0;
+background-color: antiquewhite;
+flex-direction: column;
+display: flex;
+font-weight: lighter;
+letter-spacing: 0.03rem;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-wrapper {
+  border-bottom: 1px solid #2a2a2a;
+  background: #cfc8b2;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header {
+  display: flex;
+  font-weight: lighter;
+  justify-content: space-between;
+  gap: 33%;
+  align-items: center;
+  padding: 1.5rem 1rem;
+    
+}
+
+.header-logo {
+  margin-left: 8%;
+  max-width: 400px;
+  min-width: auto;
+  
+  
+}
+
+ul {
+
+  list-style: none;
+  margin-right: 10%; 
+  display: flex; 
+  padding: 0;
+}
+
+li {
+  font-size: 1.4rem;  
+  margin: 0 1.5rem; 
+  padding: 0;  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*part 2*/
+
+div.content {
+  box-sizing: border-box;
+  border: solid #454138;
+  border-width: 0.1rem 0;
+  padding: 0.1rem 0;
+}
+
+.content {
+  padding: 0%;
+  display: flex;
+  align-items: center;
+
+  background-image:url("../img/DND_Background.png");
+  background-repeat: no-repeat;
+  background-attachment: scr;
+  background-origin: content-box;
+  background-position: right top;
+  background-size:cover;
+
+}
+
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rem 0rem;
+  margin: 15% 11.5%;
+  width: 480px;
+}
+
+.content-box-title {
+  font-size: 48px;
+  padding-top: -10% ;
+
+}
+
+.content-box-text {
+  font-size: 18px;
+}
+
+.content-image {
+  height: 480px;
+  width: auto;
+  margin: 40px 240px 40px 120px;
+}
+
+.playable-characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
