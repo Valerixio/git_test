@@ -41,7 +41,7 @@ body {
 {
   .header-logo {
     max-height: 40px;
-    margin-left: 3%;
+    margin-left: 2%;
     /* cellulare */
   }
 }
@@ -59,7 +59,7 @@ ul {
 ul {
 
   list-style: none;
-  margin-right: 20%;
+  margin-right: 18%;
   display: flex;
   padding: 0;
 }
@@ -74,9 +74,11 @@ li {
 @media (max-width: 400px) 
 {
 li {
-  font-size: 70%;
-  margin: 10%;
+  font-size: 75%;
+  margin: 8%;
   padding: 0;
+  white-space: nowrap;
+  margin-bottom: 15%;
 }
 }
 a {
@@ -470,7 +472,7 @@ button:not(:disabled),
   font-family: inherit;
   letter-spacing: inherit;
   font-weight: inherit;
-  cursor: pointer;
+  cursor:pointer; 
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
