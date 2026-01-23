@@ -12,6 +12,11 @@ body {
 
 }
 
+
+
+/*header section*/
+
+
 .header-wrapper {
   border-bottom: 0.1rem solid #2a2a2a;
   background: #cfc8b2;
@@ -86,6 +91,13 @@ a {
   color: inherit;
 }
 
+
+/*header section*/
+
+
+
+
+
 /*part 2*/
 
 div.content {
@@ -125,11 +137,12 @@ div.content {
 .content-box-title {
   font-size: 48px;
   padding-top: -10%;
-
+  white-space: nowrap;
 }
 
 .content-box-text {
   font-size: 18px;
+  
 }
 
 
@@ -147,11 +160,12 @@ div.content {
 .content-box-title {
   font-size: 20px;
   padding-top: -10%;
-
+  white-space: nowrap;
 
 }
 .content-box-text {
   font-size: 10px;
+  
 }
 }
 .content-image {
