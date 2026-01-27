@@ -1,34 +1,36 @@
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
+.scroll-box{
+  width: 400px;
+  padding: 12px;
+  background: #e8e2cf;
+  overflow-x: auto;
+  border-radius: 6px;
 }
 
-.header {
-  display: flex;
-  font-weight: lighter;
-  justify-content: space-between;
-  gap: 33%;
-  align-items: center;
-  padding: 2rem 1rem;
-
+/* forza una riga sola */
+.content{
+  white-space: nowrap;
 }
 
-.header-logo {
-  width: 100%;
-  max-width: 350px;
-  min-width: 200px;
-  margin-left: 10%;
+/* ===== SCROLLBAR CUSTOM ===== */
+.scroll-box::-webkit-scrollbar{
+  height: 6px;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  margin-right: 10%;
-  padding: 0;
+.scroll-box::-webkit-scrollbar-track{
+  background: transparent;
 }
 
-li {
-  margin: 0 0.6rem;
-  font-size: 1.6rem;
-  padding: 0;
+.scroll-box::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.35);
+  border-radius: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover{
+  background: rgba(0,0,0,0.55);
+}
+
+/* Firefox */
+.scroll-box{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.4) transparent;
 }

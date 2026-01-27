@@ -57,6 +57,60 @@ a {
   color: inherit;
 }
 
+/*scroll*/
+.scroll-wrap{
+  margin: 250px;
+}
+
+.h-scroll p{
+  
+   
+  hyphens: none;
+  text-align: justify;
+
+}
+.h-scroll{
+  display: flex;
+  gap: 44px;
+  
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+  scroll-snap-type: x mandatory;
+  padding-right: 100px;
+  size-adjust: inherit;
+
+  background: rgba(0, 0, 0, 0);
+
+  /* mobile smooth */
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.page{
+  max-width: 1100px;
+  
+  padding: 18px 16px 28px;
+  
+ 
+}
+
+.panel{
+  flex: 0 0 min(85%, 520px);
+  scroll-snap-align: start;
+
+  border: 1px solid var(--line);
+  
+  padding: 16px;
+  min-height: 220px;
+  
+}
+
+
+
+/*scroll*/ 
+
+
 /*part 2*/
 
 div.content {
@@ -78,9 +132,11 @@ div.content {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-origin: content-box;
-  background-position: right top;
+  background-position:right;
   background-size:contain;
   
+  min-height: 300px;
+  max-height: 900px;
   
 }
 
@@ -91,6 +147,7 @@ div.content {
   padding-bottom: 10rem 0rem;
   margin: 9.4% 11.5%;
   width: 480px;
+  
 }
 
 .content-box-title {
@@ -194,6 +251,7 @@ button:not(:disabled),
   transition-property: color, background-color, box-shadow;
   position: relative;
   z-index: 1;
+ 
 }
 
 button:not(:disabled):after,
@@ -247,3 +305,25 @@ button:not(:disabled):hover,
 
 
 /*BUTTONS*/
+
+/*webkit scroll bar*/
+html::-webkit-scrollbar{
+  height: 10px;
+}
+
+html::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.06);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.35);
+  border-radius: 999px;
+}
+
+html{
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(0,0,0,0.35) rgba(0,0,0,0.06);
+}
+
+/*webkit scroll bar*/
