@@ -1,25 +1,27 @@
-const hScroll = document.getElementById("hScroll");
 
 
 /*navigation buttons*/
 
 const goIntro = document.getElementById("goIntro");
 const goMinigame = document.getElementById("goMinigame");
+const goOrsogatto = document.getElementById("goOrsogatto");
+const goTerraNuova = document.getElementById("goTerraNuova");
 
-/*vediamo*/
 
-const toggleWheel = document.getElementById("toggleWheel");
-
-let wheelToHorizontal = false;
-
-toggleWheel.addEventListener("click", () => {
-  wheelToHorizontal = !wheelToHorizontal;
-  toggleWheel.textContent = `Wheel → Horizontal: ${wheelToHorizontal ? "ON" : "OFF"}`;
+goIntro.addEventListener("click", () => {
+  document.getElementById("intro").scrollIntoView({ behavior: "smooth", inline: "start" });
 });
 
-// Optional: convert mouse wheel vertical to horizontal inside the box
-hScroll.addEventListener("wheel", (e) => {
-  if(!wheelToHorizontal) return;
-  e.preventDefault();
-  hScroll.scrollLeft += e.deltaY;
-}, { passive: false });
+goMinigame.addEventListener("click", () => {
+  document.getElementById("minigame").scrollIntoView({ behavior: "smooth", inline: "start" });
+});
+
+goOrsogatto.addEventListener("click", () => {
+  document.getElementById("Orsogatto").scrollIntoView({ behavior: "smooth", inline: "start" });
+});
+
+
+
+goTerraNuova.addEventListener("click", () => {
+  document.getElementById("TerraNuova").scrollIntoView({ behavior: "smooth", inline: "start" });
+});
